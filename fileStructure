@@ -1,0 +1,53 @@
+mediva-website/
+│── package.json
+│── tailwind.config.js
+│── postcss.config.js
+│── next.config.js
+│── tsconfig.json
+│
+│── public/
+│   ├── favicon.ico
+│   ├── logo.svg
+│   └── images/
+│       ├── hero/
+│       ├── services/
+│       ├── doctors/
+│       ├── treatments/
+│       └── footer/
+│
+└── pages/
+    │── _app.tsx
+    │── index.tsx
+    │── about.tsx
+    │── services.tsx
+    │── doctors.tsx
+    │── contact.tsx
+    │
+    ├── auth/
+    │   ├── login.tsx
+    │   └── signup.tsx
+    │
+    └── api/
+        └── auth/
+            ├── signup.ts
+            ├── login.ts
+            └── otp.ts        # 🔑 For patient-consent OTP
+│
+└── components/
+    ├── Navbar.tsx
+    ├── Hero.tsx
+    ├── Services.tsx
+    ├── MentalHealth.tsx
+    ├── WhyChooseUs.tsx
+    ├── Treatments.tsx
+    ├── Mission.tsx
+    ├── Contact.tsx
+    ├── Footer.tsx
+    │
+    └── auth/
+        ├── LoginForm.tsx
+        ├── SignupForm.tsx
+       
+│
+└── styles/
+    └── globals.css
