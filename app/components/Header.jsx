@@ -27,17 +27,17 @@ const Header = () => {
           <Link href="/services" className="hover:text-purple-600 font-medium">
             Services
           </Link>
-          <Link href="/doctors" className="hover:text-purple-600 font-medium">
+          <Link href="#doctors" className="hover:text-purple-600 font-medium">
             For Doctors
           </Link>
-          <Link href="/appointments" className="hover:text-purple-600 font-medium">
+          <Link href="#patients" className="hover:text-purple-600 font-medium">
             For Patients
           </Link>
-          <Link href="/security" className="hover:text-purple-600 font-medium">
+          <Link href="#security" className="hover:text-purple-600 font-medium">
             Security
           </Link>
-          <Link href="/contact" className="hover:text-purple-600 font-medium">
-            Contact
+          <Link href="#contact" className="hover:text-purple-600 font-medium">
+            Contact As
           </Link>
         </div>
 
@@ -79,7 +79,7 @@ const Header = () => {
               <Link href="#patients" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">For Patients</Link>
               <Link href="#doctors" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">For Doctors</Link>
               <Link href="#security" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Security</Link>
-              <Link href="#contact" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Contact</Link>
+              <Link href="#contact" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Contact As</Link>
               <div className="flex flex-col space-y-2 pt-2">
                 <Link href="/signup" className="w-full text-center px-5 py-2 rounded-full border border-gray-300 hover:bg-gray-100">
                   Sign up
