@@ -7,6 +7,7 @@ import About from './components/About'
 import Patients from './components/Patients'
 import Doctors from './components/Doctor'
 import Security from './components/Security'
+import FAQ from './components/FAQ'
 import Footer from './components/Footer'
 // import Cards from './components/Cards'
 
@@ -35,6 +36,7 @@ const Page = () => {
       <Patients />
       <Doctors />
       <Security />
+      <FAQ />
       <Footer />
     </>
   )
