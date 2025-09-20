@@ -8,7 +8,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white shadow-sm">
+    <header className={`w-full bg-white shadow-sm ${isOpen ? 'relative' : ''}`}>
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
@@ -21,17 +21,20 @@ const Header = () => {
           <Link href="/" className="hover:text-purple-600 font-medium">
             Home
           </Link>
-          <Link href="/about" className="hover:text-purple-600 font-medium">
+          <Link href="#about" className="hover:text-purple-600 font-medium">
             About
           </Link>
           <Link href="#services" className="hover:text-purple-600 font-medium">
             Services
           </Link>
           <Link href="/doctors" className="hover:text-purple-600 font-medium">
-            Doctors
+            For Doctors
           </Link>
           <Link href="/appointments" className="hover:text-purple-600 font-medium">
-            Appointments
+            For Patients
+          </Link>
+          <Link href="/security" className="hover:text-purple-600 font-medium">
+            Security
           </Link>
           <Link href="/contact" className="hover:text-purple-600 font-medium">
             Contact
@@ -56,7 +59,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-3xl text-gray-700"
+          className="md:hidden text-3xl text-gray-700 z-100 "
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
@@ -66,22 +69,28 @@ const Header = () => {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-lg border-t px-6 py-4 space-y-4">
-          <Link href="/" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Home</Link>
-          <Link href="/about" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">About</Link>
-          <Link href="/services" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Services</Link>
-          <Link href="/doctors" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Doctors</Link>
-          <Link href="/appointments" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Appointments</Link>
-          <Link href="/contact" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Contact</Link>
-          <div className="flex flex-col space-y-2 pt-2">
-            <Link href="/signup" className="w-full text-center px-5 py-2 rounded-full border border-gray-300 hover:bg-gray-100">
-              Sign up
-            </Link>
-            <Link href="/login" className="w-full text-center px-5 py-2 rounded-full bg-black text-white hover:bg-gray-900">
-              Login
-            </Link>
+        <>
+          <div className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden" onClick={() => setIsOpen(false)} />
+          <div className="absolute top-16 left-0 right-0 mx-4 bg-white shadow-lg rounded-xl z-50 md:hidden">
+            <div className="flex flex-col space-y-4 px-6 py-4">
+              <Link href="/" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Home</Link>
+              <Link href="#about" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">About</Link>
+              <Link href="#services" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Services</Link>
+              <Link href="#patients" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">For Patients</Link>
+              <Link href="#doctors" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">For Doctors</Link>
+              <Link href="#security" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Security</Link>
+              <Link href="#contact" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Contact</Link>
+              <div className="flex flex-col space-y-2 pt-2">
+                <Link href="/signup" className="w-full text-center px-5 py-2 rounded-full border border-gray-300 hover:bg-gray-100">
+                  Sign up
+                </Link>
+                <Link href="/login" className="w-full text-center px-5 py-2 rounded-full bg-black text-white hover:bg-gray-900">
+                  Login
+                </Link>
+              </div>
+            </div>
           </div>
-        </div>
+        </>
       )}
     </header>
   );

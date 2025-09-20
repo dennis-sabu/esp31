@@ -36,7 +36,7 @@ const Hero = () => {
           className="mt-8 flex flex-col sm:flex-row gap-4 justify-center"
         >
           <button className="bg-white text-black font-medium px-6 py-3 rounded-full shadow hover:bg-gray-100">
-            Book Appointment
+            Get Started
           </button>
           <button className="bg-white/20 border border-white text-white px-6 py-3 rounded-full shadow hover:bg-white/30 flex items-center justify-center gap-2">
             See How It Works →

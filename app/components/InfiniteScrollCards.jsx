@@ -19,7 +19,7 @@ const InfiniteScrollCards = ({
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop",
+      image: "https://plus.unsplash.com/premium_photo-1664475369784-be57403ad214?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "20,000+ Appointments",
       subtitle: "Your Smile, Our Mission",
       avatars: true
