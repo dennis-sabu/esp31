@@ -3,7 +3,9 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-300 py-12 px-6 mt-12 rounded-t-2xl">
+    <footer
+    id="contact"
+     className="bg-black text-gray-300 py-12 px-6 mt-12 rounded-t-2xl">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         
         {/* Logo + Tagline */}
@@ -30,11 +32,11 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm">
-            <li><a href="#" className="hover:text-white">Home</a></li>
-            <li><a href="#" className="hover:text-white">About</a></li>
-            <li><a href="#" className="hover:text-white">Services</a></li>
-            <li><a href="#" className="hover:text-white">Doctors</a></li>
-            <li><a href="#" className="hover:text-white">Blog</a></li>
+            <li><a href="/" className="hover:text-white">Home</a></li>
+            <li><a href="#about" className="hover:text-white">About</a></li>
+            <li><a href="#services" className="hover:text-white">Services</a></li>
+            <li><a href="#patients" className="hover:text-white">For Patients</a></li>
+            <li><a href="#doctors" className="hover:text-white">For Doctors</a></li>
           </ul>
         </div>
 

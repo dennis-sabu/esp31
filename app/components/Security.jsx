@@ -2,7 +2,9 @@ import React from "react";
 
 const Security = () => {
   return (
-    <section className="bg-white-50 py-16 px-6">
+    <section 
+    id="security"
+    className="bg-white-50 py-16 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Left Side - Image */}
