@@ -1,9 +1,14 @@
-import React from 'react'
+'use client'
+import Header from '../components/Header'
+import Signup from '../components/Signup'
 
-const page = () => {
+const SignupPage = () => {
   return (
-    <div>page</div>
+    <>
+      <Header />
+      <Signup />
+    </>
   )
 }
 
-export default page
+export default SignupPage

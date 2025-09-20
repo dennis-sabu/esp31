@@ -21,23 +21,17 @@ const Page = () => {
   // const [loading, setLoading] = useState(true);
   return (
     <>
-      {/* {loading && <Preloader onFinish={() => setLoading(false)} />}
-      {!loading && (
-        <div>
-          <div><Header /></div>
-          <div><Cards /></div>
-        </div>
-      )}
-      */}
       <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Patients />
-      <Doctors />
-      <Security />
-      <FAQ />
-      <Footer />
+      <div className="pt-20">
+        <Hero />
+        <About />
+        <Services />
+        <Patients />
+        <Doctors />
+        <Security />
+        <FAQ />
+        <Footer />
+      </div>
     </>
   )
 }

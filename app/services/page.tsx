@@ -12,10 +12,12 @@ const ServicesPage = () => {
   return (
     <>
       <Header />
-      <ServiceSuite />
-      <WhyChooseUs />
-      <Transform isLoggedIn={isLoggedIn} />
-      <Footer />
+      <div className="pt-20">
+        <ServiceSuite />
+        <WhyChooseUs />
+        <Transform isLoggedIn={isLoggedIn} />
+        <Footer />
+      </div>
     </>
   )
 }

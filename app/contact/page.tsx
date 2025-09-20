@@ -7,8 +7,10 @@ const ContactPage = () => {
   return (
     <>
       <Header />
-      <Contact />
-      <Footer />
+      <div className="pt-20">
+        <Contact />
+        <Footer />
+      </div>
     </>
   )
 }

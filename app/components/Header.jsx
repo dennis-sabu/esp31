@@ -8,7 +8,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className={`w-full bg-white shadow-sm ${isOpen ? 'relative' : ''}`}>
+    <header className={`fixed top-0 left-0 right-0 w-full bg-white shadow-sm z-50 ${isOpen ? 'relative' : ''}`}>
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
