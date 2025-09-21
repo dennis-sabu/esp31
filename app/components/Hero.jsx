@@ -5,7 +5,7 @@ import InfiniteScrollCards from "./InfiniteScrollCards";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-r from-blue-400 via-purple-300 to-pink-300 py-20 pb-40 px-6 sm:px-12 rounded-3xl shadow-lg overflow-hidden max-w-[1600px] mx-auto">
+    <section className="relative bg-gradient-to-r from-blue-400 via-purple-300 to-pink-300 py-10 pb-20 px-3 sm:px-12 rounded-3xl shadow-lg overflow-hidden max-w-[1600px] mx-auto">
       <div className="text-center">
         {/* Heading */}
         <motion.h1

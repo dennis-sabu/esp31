@@ -8,7 +8,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className={`w-full bg-white shadow-sm ${isOpen ? 'relative' : ''}`}>
+    <header className={`fixed top-0 left-0 right-0 w-full bg-white shadow-sm z-50 ${isOpen ? 'relative' : ''}`}>
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
@@ -75,7 +75,7 @@ const Header = () => {
             <div className="flex flex-col space-y-4 px-6 py-4">
               <Link href="/" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Home</Link>
               <Link href="#about" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">About</Link>
-              <Link href="#services" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Services</Link>
+              <Link href="/services" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Services</Link>
               <Link href="#patients" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">For Patients</Link>
               <Link href="#doctors" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">For Doctors</Link>
               <Link href="#security" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Security</Link>

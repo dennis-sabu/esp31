@@ -7,6 +7,7 @@ import About from './components/About'
 import Patients from './components/Patients'
 import Doctors from './components/Doctor'
 import Security from './components/Security'
+import FAQ from './components/FAQ'
 import Footer from './components/Footer'
 // import Cards from './components/Cards'
 
@@ -20,22 +21,17 @@ const Page = () => {
   // const [loading, setLoading] = useState(true);
   return (
     <>
-      {/* {loading && <Preloader onFinish={() => setLoading(false)} />}
-      {!loading && (
-        <div>
-          <div><Header /></div>
-          <div><Cards /></div>
-        </div>
-      )}
-      */}
       <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Patients />
-      <Doctors />
-      <Security />
-      <Footer />
+      <div className="pt-20">
+        <Hero />
+        <About />
+        <Services />
+        <Patients />
+        <Doctors />
+        <Security />
+        <FAQ />
+        <Footer />
+      </div>
     </>
   )
 }

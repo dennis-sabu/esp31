@@ -1,9 +1,14 @@
-import React from 'react'
+'use client'
+import Header from '../components/Header'
+import Login from '../components/Login'
 
-const page = () => {
+const LoginPage = () => {
   return (
-    <div>page</div>
+    <>
+      <Header />
+      <Login />
+    </>
   )
 }
 
-export default page
+export default LoginPage
