@@ -75,7 +75,7 @@ const Header = () => {
             <div className="flex flex-col space-y-4 px-6 py-4">
               <Link href="/" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Home</Link>
               <Link href="#about" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">About</Link>
-              <Link href="/services" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Services</Link>
+              <Link href="#services" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Services</Link>
               <Link href="#patients" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">For Patients</Link>
               <Link href="#doctors" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">For Doctors</Link>
               <Link href="#security" onClick={() => setIsOpen(false)} className="block hover:text-purple-600">Security</Link>
